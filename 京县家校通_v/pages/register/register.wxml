@@ -1,0 +1,26 @@
+<!--pages/register/register.wxml-->
+<view class='content'>
+
+  <view class='inputbox'>
+    <!-- <view> -->
+      <!-- <label>学生姓名</label> -->
+      <input class='name' placeholder='请输入学生姓名'></input>
+    <!-- </view> -->
+    <!-- <view> -->
+      <!-- <label>学生学号</label> -->
+      <input class='number' placeholder='请输入学生学号'></input>
+      <input class='pname' placeholder='请输入您的姓名'></input>
+      <input class='tel' placeholder='请输入您的电话'></input>
+      <input class='relation' placeholder='请选择关系'></input>
+    <!-- </view> -->
+    <view class='login' bindtap='showLogin'>登录</view>
+  </view>
+
+  <button class='commit' bindtap='commitLoginInfo'>提交</button>
+
+  <!-- <view class='buttonbox'> -->
+    <!-- <image src='/pages/images/btn.png'></image>
+    <navigator url='/pages/parents/parents'>提交</navigator> -->
+  <!-- </view> -->
+</view>
+

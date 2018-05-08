@@ -1,0 +1,9 @@
+<!--pages/login/login.wxml-->
+<view class='content'>
+  <view class='inputbox'>
+    <input class='name' placeholder='请输入学生姓名'></input>
+    <input class='number' placeholder='请输入学生学号'type='number' ></input>
+    <view class='register' bindtap='showRegister'>绑定学生账号</view>
+  </view>
+  <button class='commit' bindtap='commitLoginInfo'>提交</button>
+</view>

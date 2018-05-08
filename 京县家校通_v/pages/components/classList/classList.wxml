@@ -1,0 +1,10 @@
+<!--pages/components/classList/classList.wxml-->
+<view class='content'>
+  <image class='avater'></image>
+  <view class='name'>邓涛(自己)</view>
+  <image class='delete' src='../../images/class/cancel.png'></image>
+  <view class='date'>05-08 17:00</view>
+  <image class='love' src='../../images/class/love.png'></image>
+  <image class='message'  src='../../images/class/message-sel.png'></image>
+  <view class='line'></view>
+</view>
