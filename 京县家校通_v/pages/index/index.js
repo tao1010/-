@@ -15,6 +15,30 @@ Page({
       url: '../logs/logs'
     })
   },
+  clickParentsCenter: function(){
+
+    //修改全局变量
+    console.log("11111111")
+    getApp().globalData.userRole = "1"
+    console.log(getApp().globalData.userRole)
+  },
+  clickTeacherCenter: function () {
+
+    //修改全局变量
+    // app.globalData.userRole = "1",
+    console.log("222222222")
+    getApp().globalData.userRole = "2"
+    console.log(getApp().globalData.userRole)
+  },
+  clickAdminCenter: function () {
+
+    //修改全局变量
+    // app.globalData.userRole = "1",
+    console.log("333333333")
+    getApp().globalData.userRole = "3"
+    console.log(getApp().globalData.userRole)
+  },
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

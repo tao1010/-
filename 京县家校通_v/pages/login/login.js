@@ -1,20 +1,98 @@
 // pages/login/login.js
+
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    placeholdername: "请输入学生姓名",
+    placeholdernumber: "请输入学生学号",
+    hiddenRegister: false,
+    password: false,
+    inputType: "number"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
-  },
 
+    if (getApp().globalData.userRole === "1"){
+      this.setData({
+        placeholdername: "请输入学生姓名",
+        placeholdernumber: "请输入学生学号",
+        hiddenRegister: false,
+        password: false,
+        inputType: "number"
+      });
+      wx.setNavigationBarTitle({
+        title: '家长登录',
+      })
+    }
+    if (getApp().globalData.userRole === "2") {
+      this.setData({
+        placeholdername: "请输入教师账号",
+        placeholdernumber: "请输入教师密码",
+        hiddenRegister: true,
+        password: true,
+        inputType: "text"
+      }); 
+      wx.setNavigationBarTitle({
+        title: '教师登录',
+      })
+    }
+    if (getApp().globalData.userRole === "3") {
+
+      this.setData({
+        placeholdername: "请输入管理员账号",
+        placeholdernumber: "请输入管理员密码",
+        hiddenRegister: true,
+        password: true,
+        inputType: "text"
+      });
+      wx.setNavigationBarTitle({
+        title: '管理员登录',
+      })
+    }
+  },
+  /**
+     * 点击事件
+     */
+  commitLoginInfo: function () {
+    console.log(getApp().globalData.userRole)
+    if (getApp().globalData.userRole === "1") {
+
+      wx.switchTab({
+        url: '../parents/parents',
+      })
+    }
+    if (getApp().globalData.userRole === "2") {
+
+      wx.switchTab({
+        url: '../school/school',
+      })
+    }
+    if (getApp().globalData.userRole === "3") {
+
+      wx.switchTab({
+        url: '../admin/admin',
+      })
+    }
+  },
+  updateTabbar: function () {
+
+    console.log(getApp().globalData.userRole)
+  },
+  showRegister: function () {
+
+    wx.navigateTo({
+      url: '../register/register',
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -62,20 +140,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-
-  /**
-   * 点击事件
-   */ 
-  commitLoginInfo: function(){
-    wx.switchTab({
-      url: '../parents/parents',
-    })
-  },
-  showRegister: function(){
-
-    wx.navigateTo({
-      url: '../register/register',
-    })
-  },
+  }
 })
