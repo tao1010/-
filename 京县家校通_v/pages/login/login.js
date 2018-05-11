@@ -53,6 +53,7 @@ Page({
         password: true,
         inputType: "text"
       });
+     
       wx.setNavigationBarTitle({
         title: '管理员登录',
       })
