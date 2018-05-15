@@ -1,6 +1,6 @@
-// pages/common/contact/contact.js
-// const app = getApp()
-// var template = require('../../remplate/customTabbar.js');
+// pages/admin/admin.js
+var app = getApp();
+
 Page({
 
   /**
@@ -9,13 +9,18 @@ Page({
   data: {
   
   },
+  logout: function () {
 
+    wx.redirectTo({
+      url: '../index/index',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-    // template.tabbar("tabBar", 2, this)//1表示第二个tabbar
+  
+    app.updateTabBarWithAdmin();
   },
 
   /**

@@ -1,0 +1,7 @@
+<!--pages/teach/teach.wxml-->
+<text>pages/teach/teach.wxml</text>
+<view class='button' bindtap='logout'>退出登录</view>
+<view class='score' bindtap='scoreEnter'>成绩录入</view>
+
+
+<import src="../template/template.wxml"/> <template is="tabBar" data="{{tabBar}}"/>

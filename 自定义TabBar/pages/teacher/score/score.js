@@ -1,6 +1,4 @@
-// pages/common/contact/contact.js
-// const app = getApp()
-// var template = require('../../remplate/customTabbar.js');
+// pages/teacher/score/score.js
 Page({
 
   /**
@@ -14,8 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-    // template.tabbar("tabBar", 2, this)//1表示第二个tabbar
+  
   },
 
   /**

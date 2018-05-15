@@ -1,4 +1,7 @@
 // pages/class/class.js
+// const app = getApp()
+// var template = require('../../remplate/customTabbar.js');
+
 Page({
   /**
    * 页面的初始数据
@@ -20,7 +23,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
+    // template.tabbar("tabBar", 1, this)//1表示第二个tabbar
   },
 
   /**

@@ -1,0 +1,20 @@
+/* pages/teach/teach.wxss */
+
+.button{
+
+  background: gray;
+  height: 50px;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+
+.score{
+
+  background: greenyellow;
+  height: 50px;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}

@@ -1,0 +1,6 @@
+/* pages/template/template.wxss */
+
+.title{
+
+  font-size: 20px;
+}

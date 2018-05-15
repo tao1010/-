@@ -9,7 +9,8 @@
     "pages/register/register",
     "pages/common/class/class",
     "pages/common/home/home",
-    "pages/common/contact/contact"
+    "pages/common/contact/contact",
+    "pages/video/video"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,29 +21,31 @@
   "tabBar": {
     "color": "#6e6d6b",
     "selectedColor": "#33cbd5",
-    "list": [{
-      "pagePath": "pages/common/home/home",
-      "text": "学校",
-      "iconPath": "pages/images/nav/home.png",
-      "selectedIconPath": "pages/images/nav/home-sel.png"
-    },
-    {
-      "pagePath": "pages/common/contact/contact",
-      "text": "通讯录",
-      "iconPath": "pages/images/nav/contact.png",
-      "selectedIconPath": "pages/images/nav/contact-sel.png"
-    },
-    {
-      "pagePath": "pages/common/class/class",
-      "text": "班级圈",
-      "iconPath": "pages/images/nav/class.png",
-      "selectedIconPath": "pages/images/nav/class-sel.png"
-    },
-    {
-      "pagePath": "pages/parents/parents",
-      "text": "我的",
-      "iconPath": "pages/images/nav/my.png",
-      "selectedIconPath": "pages/images/nav/my-sel.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/common/home/home",
+        "text": "学校",
+        "iconPath": "pages/images/nav/home.png",
+        "selectedIconPath": "pages/images/nav/home-sel.png"
+      },
+      {
+        "pagePath": "pages/common/contact/contact",
+        "text": "通讯录",
+        "iconPath": "pages/images/nav/contact.png",
+        "selectedIconPath": "pages/images/nav/contact-sel.png"
+      },
+      {
+        "pagePath": "pages/common/class/class",
+        "text": "班级圈",
+        "iconPath": "pages/images/nav/class.png",
+        "selectedIconPath": "pages/images/nav/class-sel.png"
+      },
+      {
+        "pagePath": "pages/parents/parents",
+        "text": "我的",
+        "iconPath": "pages/images/nav/my.png",
+        "selectedIconPath": "pages/images/nav/my-sel.png"
+      }
+    ]
   }
 }

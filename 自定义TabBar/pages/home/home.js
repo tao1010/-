@@ -1,6 +1,6 @@
-// pages/common/contact/contact.js
-// const app = getApp()
-// var template = require('../../remplate/customTabbar.js');
+// pages/home/home.js
+const app = getApp()
+
 Page({
 
   /**
@@ -15,7 +15,15 @@ Page({
    */
   onLoad: function (options) {
 
-    // template.tabbar("tabBar", 2, this)//1表示第二个tabbar
+    if (getApp().globalData.userRole === "1") {
+      app.updateTabBarWithParent();
+    }
+    if (getApp().globalData.userRole === "2") {
+      app.updateTabBarWithTeacher();
+    }
+    if (getApp().globalData.userRole === "3") {
+      app.updateTabBarWithAdmin();
+    }
   },
 
   /**

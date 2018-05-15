@@ -1,0 +1,17 @@
+/* pages/video/video.wxss */
+.title{
+
+  font-size: 30rpx;
+  text-align: center;
+}
+.video1 {
+
+  margin-top: 10px;
+  width: 100%;
+}
+.video2{
+
+/* 默认宽度300px、高度225px，可通过wxss设置宽高 */
+  margin-top: 10px;
+  width: 100%;
+}

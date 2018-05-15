@@ -33,6 +33,11 @@ App({
       }
     })
   },
+  editTabBar:function(){
+
+    var currentPageArray = getCurrentPages();
+
+  },
   globalData: {
     userInfo: null,
     userRole: "-1"

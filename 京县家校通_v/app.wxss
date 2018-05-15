@@ -1,4 +1,6 @@
 /**app.wxss**/
+/* @import "/template/customTabbar.wxss"; */
+
 .container {
   height: 100%;
   display: flex;

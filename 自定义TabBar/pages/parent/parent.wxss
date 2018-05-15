@@ -1,0 +1,9 @@
+/* pages/parent/parent.wxss */
+.button{
+
+  background: gray;
+  height: 50px;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+}

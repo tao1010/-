@@ -1,6 +1,5 @@
-// pages/common/contact/contact.js
-// const app = getApp()
-// var template = require('../../remplate/customTabbar.js');
+// pages/contact/contact.js
+const app = getApp()
 Page({
 
   /**
@@ -14,15 +13,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-    // template.tabbar("tabBar", 2, this)//1表示第二个tabbar
+    if (getApp().globalData.userRole === "1") {
+      app.updateTabBarWithParent();
+    }
+    if (getApp().globalData.userRole === "2") {
+      app.updateTabBarWithTeacher();
+    }
+    if (getApp().globalData.userRole === "3") {
+      app.updateTabBarWithAdmin();
+    }
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
+    
   },
 
   /**

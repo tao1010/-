@@ -65,16 +65,23 @@ Page({
   commitLoginInfo: function () {
     console.log(getApp().globalData.userRole)
     if (getApp().globalData.userRole === "1") {
-
+      wx.setTabBarItem({
+        index: 2,
+      })
+      
       wx.switchTab({
         url: '../parents/parents',
       })
     }
     if (getApp().globalData.userRole === "2") {
 
+      
       wx.switchTab({
         url: '../school/school',
       })
+      // wx.navigateTo({
+      //   url: '../school/school',
+      // })
     }
     if (getApp().globalData.userRole === "3") {
 

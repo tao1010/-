@@ -1,0 +1,5 @@
+<!--pages/parent/parent.wxml-->
+<text>pages/parent/parent.wxml</text>
+<view class='button' bindtap='logout'>退出登录</view>
+
+<import src="../template/template.wxml"/> <template is="tabBar" data="{{tabBar}}"/>

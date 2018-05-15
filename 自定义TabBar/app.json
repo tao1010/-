@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/parent/parent",
+    "pages/teach/teach",
+    "pages/admin/admin",
+    "pages/home/home",
+    "pages/contact/contact",
+    "pages/news/news",
+    "pages/teacher/score/score"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33cbd5",
+    "navigationBarTitleText": "京县家校圈",
+    "navigationBarTextStyle": "#fff"
+  }
+}

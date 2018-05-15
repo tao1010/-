@@ -1,5 +1,26 @@
 <!--pages/parents/parents.wxml-->
-<view class='content'>
-  <button bindtap='logOut'>退出登录</button>
+<!-- <import src="../template/customTabbar.wxml"/>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/> -->
 
+<view class='content'>
+  <button class='logout' bindtap='logOut'>退出登录</button>
+  <button class='video' bindtap='showVideo'>视频监控</button>
+  <view class='myAudio'>
+    <audio 
+    poster='https://tao1010.github.io/image/avatar.gif' 
+    name='此时此刻' 
+    author='许巍' 
+    src='http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46' 
+    id='audio' 
+    controls='true' 
+    loop='true'>
+    </audio>
+
+    <slider step='1' bindchange='quickPlay' value='{{value}}' min='0' max='{{max}}' show-value='true'></slider>
+
+    <button type='primary' bindtap='audioPlay'>播放</button>
+    <button type='primary' bindtap='audioPause'>暂停</button>
+    <button type='primary' bindtap='audioStart'>重新播放</button>
+
+  </view>
 </view>

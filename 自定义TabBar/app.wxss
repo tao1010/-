@@ -1,0 +1,52 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/* .menu-item{  
+  width: 32%;  
+  float: left;  
+  text-align: center;  
+  padding-top: 8px;  
+}   */
+.menu-item{  
+  width: 24%;  
+  float: left;  
+  text-align: center;  
+  padding-top: 8px;  
+}  
+.img{  
+  width: 23px;  
+  height: 23px;  
+  display: block;  
+  margin:auto;  
+}  
+.clear{  
+  clear: both;  
+}  
+.tab-bar{  
+
+  width:100%;
+  position: fixed;
+  bottom:0;
+  padding:10rpx;
+  /* margin-left:-4rpx; */
+  background:#F7F7FA;
+  font-size:20rpx;
+  color:#8A8A8A;
+  /* box-shadow: 6rpx 6rpx 6rpx 6rpx #aaa; */
+  height: 40px;
+
+  /* position: fixed;  
+  width: 100%;  
+  padding: 0px 2%;  
+  height: 50px;
+  background: rgb(247, 247, 250);
+  font-size: 20rpx; */
+}
