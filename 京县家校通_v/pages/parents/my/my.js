@@ -1,7 +1,4 @@
-// pages/parents/parents.js
-
-// const app = getApp()
-// var template = require('../remplate/customTabbar.js');
+// pages/parents/my/my.js
 Page({
 
   /**
@@ -11,30 +8,30 @@ Page({
     max: 120
   },
 
-  logOut: function(){
+  logOut: function () {
     wx.redirectTo({
-      url: '../index/index',
+      url: '../../index/index',
     })
   },
-  showVideo: function(){
+  showVideo: function () {
 
     wx.navigateTo({
-      url: '../video/video',
+      url: '../../common/video/video',
     })
   },
-  quickPlay: function(e){
+  quickPlay: function (e) {
 
     console.log(e.detail.value)
     this.audioCtx.seek(e.detail.value)
   },
-  audioPlay: function(){
+  audioPlay: function () {
 
     this.audioCtx.play()
   },
-  audioPause: function(){
+  audioPause: function () {
     this.audioCtx.pause()
   },
-  audioStart: function(){
+  audioStart: function () {
     this.audioCtx.seek(0)
   },
   /**
@@ -46,7 +43,7 @@ Page({
     // 使用 wx.createAudioContext 获取 audio 上下文 context
     this.audioCtx = wx.createAudioContext("audio", this)
     // this.audioCtx = wx.createInnerAudioContext();
-    max = this.audioCtx.detail.duration;
+    // max = this.audioCtx.detail.duration;
     // console.log(this.audioCtx.detail);
   },
 

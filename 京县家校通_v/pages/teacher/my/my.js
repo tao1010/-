@@ -1,4 +1,4 @@
-// pages/school/school.js
+// pages/teacher/my/my.js
 Page({
 
   /**

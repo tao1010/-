@@ -1,5 +1,4 @@
-/* pages/parents/parents.wxss */
-
+/* pages/parents/my/my.wxss */
 .logout{
 
   width: 90%;

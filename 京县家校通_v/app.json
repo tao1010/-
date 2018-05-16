@@ -1,16 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/login/login",
-    "pages/logs/logs",
-    "pages/admin/admin",
-    "pages/parents/parents",
-    "pages/school/school",
-    "pages/register/register",
+    "pages/common/login/login",
+    "pages/common/register/register",
     "pages/common/class/class",
     "pages/common/home/home",
     "pages/common/contact/contact",
-    "pages/video/video"
+    "pages/common/video/video",
+    "pages/admin/center/center",
+    "pages/parents/my/my",
+    "pages/teacher/my/my"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -41,7 +40,7 @@
         "selectedIconPath": "pages/images/nav/class-sel.png"
       },
       {
-        "pagePath": "pages/parents/parents",
+        "pagePath": "pages/parents/my/my",
         "text": "我的",
         "iconPath": "pages/images/nav/my.png",
         "selectedIconPath": "pages/images/nav/my-sel.png"

@@ -1,4 +1,4 @@
-<!--pages/parents/parents.wxml-->
+<!--pages/parents/my/my.wxml-->
 <!-- <import src="../template/customTabbar.wxml"/>
 <template is="tabBar" data="{{tabBar:bindData.tabBar}}"/> -->
 
@@ -24,3 +24,4 @@
 
   </view>
 </view>
+

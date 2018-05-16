@@ -6,6 +6,7 @@
   <video class='video1' src='{{videoSrcFront}}'>视频监控</video>
 </view>
 <view>
+
   <view class='title'>2-205后</view>
   <video class='video2' src='{{videoSrcFront}}' controls='true' danmu-btn='true' enable-danmu='true' danmu-list='{{list}}'>视频监控</video>
 </view> 

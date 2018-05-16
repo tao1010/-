@@ -4,15 +4,15 @@
   <view class='buttonbox'>
     <view bindtap='clickParentsCenter'>
       <image src='/pages/images/btn.png'></image>
-      <navigator url='/pages/login/login'>家长中心</navigator>
+      <navigator url='/pages/common/login/login'>家长中心</navigator>
     </view>
     <view bindtap='clickTeacherCenter'>
       <image src='/pages/images/btn.png'></image>
-      <navigator url='/pages/login/login'>教师中心</navigator>
+      <navigator url='/pages/common/login/login'>教师中心</navigator>
     </view>
     <view bindtap='clickAdminCenter'>
       <image src='/pages/images/btn.png'></image>
-      <navigator url='/pages/login/login'>管理中心</navigator>
+      <navigator url='/pages/common/login/login'>管理中心</navigator>
     </view>
   </view>
   <view class='copyright'>成都京县科技版权所有</view>

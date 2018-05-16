@@ -1,7 +1,5 @@
 // pages/login/login.js
-
-
-
+const app = getApp()
 Page({
 
   /**
@@ -63,30 +61,31 @@ Page({
      * 点击事件
      */
   commitLoginInfo: function () {
-    console.log(getApp().globalData.userRole)
+    console.log("点击家长登录" + getApp().globalData.userRole)
     if (getApp().globalData.userRole === "1") {
-      wx.setTabBarItem({
-        index: 2,
-      })
       
+      var _curPageArr = getCurrentPages();
+      var _curPage = _curPageArr[_curPageArr.length - 1];
+      var _pagePath = _curPage.__route__;
+   
+      // console.log(this.globalData.tabBar);
+      console.log(_curPageArr);
+      console.log(_curPage);
+      console.log(_pagePath);
+
+
       wx.switchTab({
-        url: '../parents/parents',
+        url: '../../parents/my/my',
       })
     }
     if (getApp().globalData.userRole === "2") {
-
-      
       wx.switchTab({
-        url: '../school/school',
+        url: '../../teacher/my/my',
       })
-      // wx.navigateTo({
-      //   url: '../school/school',
-      // })
     }
     if (getApp().globalData.userRole === "3") {
-
       wx.switchTab({
-        url: '../admin/admin',
+        url: '../../admin/center/center',
       })
     }
   },
