@@ -1,0 +1,84 @@
+<html>
+	<body style="margin:0;">
+        <div id="video" style="width: 100%; height: 100%; overflow:hidden;">
+            <div style="text-align:center;margin:100px auto;color:#909399;font-size:15pt;font-family:sans-serif">
+                您的浏览器未安装Flash插件,点击<a href="https://get.adobe.com/tw/flashplayer/" target="_blank">此处</a>进行安装！
+            </div>
+        </div>
+	</body>
+</html>
+<script type="text/javascript" src="/static/js/third-party/ckplayer/ckplayer.min.js"></script>
+		
+<script type="text/javascript">
+    function reveivedMsg(msg) {
+        switch (msg.code) {
+            case "video_start":
+                break;
+            case "video_stop":    //结束视频
+                if (cmdTimer != null) { clearInterval(cmdTimer); cmdTimer = null; }
+                break;
+        }
+    }
+    function sendMsg(msg) {
+        if (top == self) return;
+        top && top.postMessage(msg, '*');
+    }
+    //http://hls.open.ys7.com/openlive/1431fa4bc361431caec063218f933f9b.m3u8
+    window.addEventListener('message', function (e) { reveivedMsg(e.data); });
+    window.onload = function () {
+        var fls = flashChecker();
+        var s = "";
+        if (!fls.f) {
+            // if (confirm("您的浏览器未安装Flash插件，立即去安装？")) {
+            //     //window.open("https://get.adobe.com/tw/flashplayer/");
+            //     return;
+            // }else{
+            // }
+        }else{
+            var path = decodeURI(window.location.href);
+                path = path.split("?path=")[1];
+                var type = "video/" + path.substring(path.lastIndexOf(".") + 1);
+                var videoObject = {
+                    container: '#video', //容器的ID或className
+                    variable: 'player', //播放函数名称
+                    flashplayer: false,
+                    loaded: 'loadedHandler', //当播放器加载后执行的函数
+                    video: [
+                        [path, type, '中文高清', 0]
+                    ],
+                    autoplay: true
+                    //live:true,//是否是直播视频，true=直播，false=点播
+                };
+                var player = new ckplayer(videoObject);
+        }
+    };
+    //视频播放器加载完毕后
+    function loadedHandler() { player.changeControlBarShow(false); }
+    //检测flashplayer版本
+    function flashChecker() {
+        var hasFlash = 0;　　　　 //是否安装了flash    
+        var flashVersion = 0;　　 //flash版本    
+
+        if (document.all) {
+            var swf = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+            if (swf) {
+                hasFlash = 1;
+                VSwf = swf.GetVariable("$version");
+                flashVersion = parseInt(VSwf.split(" ")[1].split(",")[0]);
+            }
+        } else {
+            if (navigator.plugins && navigator.plugins.length > 0) {
+                var swf = navigator.plugins["Shockwave Flash"];
+                if (swf) {
+                    hasFlash = 1;
+                    var words = swf.description.split(" ");
+                    for (var i = 0; i < words.length; ++i) {
+                        if (isNaN(parseInt(words[i]))) continue;
+                        flashVersion = parseInt(words[i]);
+                    }
+                }
+            }
+        }
+        return { f: hasFlash, v: flashVersion };
+    }
+</script>
