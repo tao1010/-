@@ -64,14 +64,11 @@ Page({
     console.log("点击家长登录" + getApp().globalData.userRole)
     if (getApp().globalData.userRole === "1") {
       
-      var _curPageArr = getCurrentPages();
+      var _curPageArr = getCurrentPages();//获取当前栈数组内容
       var _curPage = _curPageArr[_curPageArr.length - 1];
       var _pagePath = _curPage.__route__;
    
-      // console.log(this.globalData.tabBar);
-      console.log(_curPageArr);
-      console.log(_curPage);
-      console.log(_pagePath);
+      console.log(app.window);
 
 
       wx.switchTab({

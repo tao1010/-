@@ -11,4 +11,8 @@
   <video class='video2' src='{{videoSrcFront}}' controls='true' danmu-btn='true' enable-danmu='true' danmu-list='{{list}}'>视频监控</video>
 </view> 
 
+<view>
+  <button bindtap='clickVideo'>视频拍摄和选择</button>
+</view>
+
 

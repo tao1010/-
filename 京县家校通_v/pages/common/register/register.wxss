@@ -1,1 +1,52 @@
 /* pages/common/register/register.wxss */
+
+.content{
+
+  height: 100%;
+}
+
+.inputbox{
+
+  height: 100%;
+}
+
+.inputbox input{
+
+  height: 40px;
+  width: 90%;
+  font-size: 26rpx;
+  border: 1px solid rgb(229, 229, 228);
+  border-radius: 10rpx;
+  /* 上，右，下，左 */
+  margin: 20px 5% 20px 5%; 
+} 
+
+.relation{
+
+
+}
+
+.login{
+
+  color: rgb(31, 126, 196);
+  /* width: 90%; */
+  font-size: 26rpx;
+  text-align: right;
+  background: white;
+  border: 0;
+  margin-right: 5%;
+}
+
+.commit{
+
+ /* margin-bottom: 30rpx; */
+ height: 40px;
+ border-radius: 10rpx;
+ /* width: 90%; */
+ background: #33cbd5;
+ color: white;
+ font-size: 26rpx;
+ font-family: serif;
+ margin: 20px 5% 20px 5%;
+ text-align-last: center;
+}

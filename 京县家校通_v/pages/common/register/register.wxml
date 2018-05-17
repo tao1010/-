@@ -1,2 +1,14 @@
 <!--pages/common/register/register.wxml-->
-<text>pages/common/register/register.wxml</text>
+<view class='content'>
+  <view class='inputbox'>
+    <input class='name' placeholder="请输入学生姓名" bindinput='studentName'></input>
+    <input class='number' placeholder='请输入学号' type='number' bindinput='studentNumber'></input>
+    <input class='yourname' placeholder="请输入您的姓名" bindinput='yourName'></input>
+    <input class='tel' type='number' placeholder='请输入您的电话' bindinput='yourTel'></input>
+    <input class='relationship' placeholder='请选择或输入关系' bindinput='relationship'></input>
+    <view class='login'  bindtap='showLogin'>登录</view>
+  </view>
+  <button class='commit' bindtap='commitBind'>提交</button>
+</view>
+
+

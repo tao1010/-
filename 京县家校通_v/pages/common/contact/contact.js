@@ -1,6 +1,14 @@
 // pages/common/contact/contact.js
-// const app = getApp()
-// var template = require('../../remplate/customTabbar.js');
+const recorderManager = wx.getRecorderManager()
+const options = {
+  duration: 10000,
+  sampleRate: 44100,
+  numberOfChannels: 1,
+  encodeBitRate: 192000,
+  format: 'aac',
+  frameSize: 50
+}
+
 Page({
 
   /**
@@ -9,7 +17,15 @@ Page({
   data: {
   
   },
+  startRecord: function(){
+    
+    recorderManager.start(options);
+  },
+  stopRecord: function(){
 
+    recorderManager.stop();
+  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
@@ -66,4 +82,11 @@ Page({
   onShareAppMessage: function () {
   
   }
+})
+recorderManager.onStart(() => {
+  console.log('recorder start')
+})
+recorderManager.onStop((res) => {
+  console.log('recorder stop', res)
+  const { tempFilePath } = res
 })
