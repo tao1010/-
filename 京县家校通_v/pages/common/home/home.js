@@ -8,63 +8,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+
+    city: ''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-    // template.tabbar("tabBar", 0, this)//1表示第二个tabbar
+  bindCity: function(e){
+    this.setData({
+      city: e.detail.value
+    })
   },
+  startRuest: function(){
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
+    wx.request({
+      url: 'http://op.juhe.cn/onebox/weather/query',
+      data: {
+        'x': 'cityname=%E6%88%90%E9%83%BD&dtype=&key=69e9d363d843b615bb95efed68c14fd0'
+      },
+      header: {
+        'content-type': 'appliication/json'
+      },
+      success: function(res){
+        console.log(res.data)
+      }
+    })
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
   }
+
 })

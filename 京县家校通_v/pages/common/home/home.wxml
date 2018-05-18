@@ -1,2 +1,4 @@
 <!--pages/common/home/home.wxml-->
-<text>pages/common/home/home.wxml</text>
+<view>网络请求</view>
+<input bindinput='bindCity'></input>
+<button bindtap='startRuest'>开始请求</button>

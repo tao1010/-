@@ -1,8 +1,8 @@
 <!--pages/login/login.wxml-->
 <view class='content'>
   <view class='inputbox'>
-    <input class='name' placeholder="{{placeholdername}}"></input>
-    <input class='number' password='{{password}}' placeholder='{{placeholdernumber}}'type='{{inputType}}' ></input>
+    <input class='name' placeholder="{{placeholdername}}" bindinput='bindFirstInput'></input>
+    <input class='number' password='{{password}}' placeholder='{{placeholdernumber}}'type='{{inputType}}' bindinput='bindSecondInput' ></input>
     <view class='register' hidden='{{hiddenRegister}}' bindtap='showRegister'>绑定学生账号</view>
   </view>
   <button class='commit' bindtap='commitLoginInfo'>提交</button>
