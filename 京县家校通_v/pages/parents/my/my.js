@@ -74,53 +74,42 @@ Page({
     // max = this.audioCtx.detail.duration;
     // console.log(this.audioCtx.detail);
   },
+  //上传文件
+  uploadFile:function(){
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+    const uploadTask =wx.uploadFile({
+      url: '',//上传服务器的URL
+      filePath: '',//文件路径
+      name: '',//文件名称
+      header: {},
+      formData: {
+        'user': 'test'
+      },
+      success: function(res) {
+
+        var data = res.data
+        //do something
+      },
+      fail: function(res) {
+        //do something
+      },
+      complete: function(res) {
+        //do something
+      },
+    })
+    //上传进度
+    uploadTask.onProgressUpdate((res) =>{
+
+      console.log('上传进度', res.progress)
+      console.log('已经上传的数据长度', res.totalBytesSent)
+      console.log('预期需要上传的数据总长度', res.totalBytesExpectedToSend)
+    })
+    uploadTask.abort()//取消上传任务
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
+  //下载文件
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
 })

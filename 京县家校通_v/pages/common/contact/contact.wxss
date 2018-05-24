@@ -1,1 +1,9 @@
 /* pages/common/contact/contact.wxss */
+.map{
+
+  background: lightgray;
+  margin-top: 10px;
+  width: 90%;
+  height: 400px;
+  margin-left: 5%;
+}
