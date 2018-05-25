@@ -1,4 +1,10 @@
 /* pages/common/contact/contact.wxss */
+
+view{
+
+  background: lightblue;
+}
+
 .map{
 
   background: lightgray;
