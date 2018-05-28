@@ -95,7 +95,7 @@ Page({
         console.log('精度:' + res.latitude)
       },
     });
-    mapCtx.moveToLocation();
+    mapCtx.moveToLocation();//当前位置的点移到地图中间
   },
   /**
   * 生命周期函数--监听页面初次渲染完成

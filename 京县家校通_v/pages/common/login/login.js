@@ -33,6 +33,11 @@ Page({
     console.log('1212'+ this.first)
     console.log('1231' + this.second)
 
+    // wx.reLaunch({
+    //   url: '../../parents/my/my',
+    // })
+
+    // return;
     console.log("点击家长登录" + getApp().globalData.userRole)
     if (getApp().globalData.userRole === "1") {
 
