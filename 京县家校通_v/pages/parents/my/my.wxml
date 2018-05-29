@@ -4,31 +4,11 @@
 
 <view class='content'>
   <button class='logout' bindtap='logOut'>退出登录</button>
-  <button class='video' bindtap='showVideo'>视频监控</button>
-  <view class='myAudio'>
-    <audio 
-    poster='https://tao1010.github.io/image/avatar.gif' 
-    name='此时此刻' 
-    author='许巍' 
-    src='http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46' 
-    id='audio' 
-    controls='true' 
-    loop='true'>
-    </audio>
-
-    <slider step='1' bindchange='quickPlay' value='{{value}}' min='0' max='{{max}}' show-value='true'></slider>
-
-    <button type='primary' bindtap='audioPlay'>播放</button>
-    <button type='primary' bindtap='audioPause'>暂停</button>
-    <button type='primary' bindtap='audioStart'>重新播放</button>
-  </view>
-  <view>
-     <button type='primary' bindtap='pictureSource'>图片来源</button>
-     <button type='default' bindtap='takePhoto'>拍照</button> 
-
-    <!-- <camera device-position='back' flash='off' binderror='error' style='width:100%; height: 300px;'></camera>  -->
-    <view>预览</view>
-    <image mode='widthFix' src='{{src}}'></image>
-  </view>
+  <button class='video' bindtap='video'>视频</button>
+  <button class='video' bindtap='canvas'>绘图</button>
+  <button class='video' bindtap='animation'>动画</button>
+  <button class='video' bindtap='audio'>音频</button>
+  <button class='video' bindtap='map'>地图</button>
+  <button class='video' bindtap='request'>网络请求</button>
 </view>
 

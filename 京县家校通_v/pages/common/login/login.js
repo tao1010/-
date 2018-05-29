@@ -30,15 +30,7 @@ Page({
   //点击事件
   commitLoginInfo: function () {
 
-    console.log('1212'+ this.first)
-    console.log('1231' + this.second)
-
-    // wx.reLaunch({
-    //   url: '../../parents/my/my',
-    // })
-
-    // return;
-    console.log("点击家长登录" + getApp().globalData.userRole)
+    console.log("登录角色:"+ getApp().globalData.userRole)
     if (getApp().globalData.userRole === "1") {
 
       wx.switchTab({
@@ -48,11 +40,13 @@ Page({
     if (getApp().globalData.userRole === "2") {
       wx.switchTab({
         url: '../../teacher/my/my',
+        // url: '../../parents/my/my',
       })
     }
     if (getApp().globalData.userRole === "3") {
       wx.switchTab({
         url: '../../admin/center/center',
+        // url: '../../parents/my/my',
       })
     }
   },

@@ -10,13 +10,19 @@
     "pages/admin/center/center",
     "pages/parents/my/my",
     "pages/teacher/my/my",
-    "pages/common/video/API/videoAPI"
+    "pages/common/video/API/videoAPI",
+    "pages/parents/canvas/canvas",
+    "pages/parents/animation/animation",
+    "pages/parents/audio/audio",
+    "pages/parents/map/map",
+    "pages/parents/request/request"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#33cbd5",
     "navigationBarTitleText": "京县家校圈",
-    "navigationBarTextStyle": "#fff"
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#6e6d6b",

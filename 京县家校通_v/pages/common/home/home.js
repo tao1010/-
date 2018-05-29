@@ -9,28 +9,30 @@ Page({
    */
   data: {
 
-    city: ''
+    
+    role: 0
   },
-  bindCity: function(e){
-    this.setData({
-      city: e.detail.value
-    })
-  },
-  startRuest: function(){
+  onLoad: function(options){
 
-    wx.request({
-      url: 'http://op.juhe.cn/onebox/weather/query',
-      data: {
-        'x': 'cityname=%E6%88%90%E9%83%BD&dtype=&key=69e9d363d843b615bb95efed68c14fd0'
-      },
-      header: {
-        'content-type': 'appliication/json'
-      },
-      success: function(res){
-        console.log(res.data)
-      }
-    })
-
-  }
-
+    // if (getApp().globalData.userRole === "1") {
+    //   role = 1;
+    //   wx.setNavigationBarTitle({
+    //     title: '学校-家长端',
+    //   })
+      
+    // }else
+    // if (getApp().globalData.userRole === "2") {
+    //   role = 2;
+    //   wx.setNavigationBarTitle({
+    //     title: '学校-教师端',
+    //   })
+    // }else
+    // if (getApp().globalData.userRole === "3") {
+    //   role = 3;
+    //   wx.setNavigationBarTitle({
+    //     title: '学校-管理员端',
+    //   })
+    // }
+    
+  },  
 })
