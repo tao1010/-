@@ -1,0 +1,4 @@
+<!--pages/parents/canvas/canvas.wxml-->
+<canvas canvas-id="myCanvas" style="border: 1px solid;">
+
+</canvas>

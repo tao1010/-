@@ -1,0 +1,11 @@
+<!--pages/parents/request/request.wxml-->
+<form>
+  <input bindinput='bindCity' placeholder='绑定城市'></input>
+  <button bindtap='startRuest'>开始请求</button>
+</form>
+<!-- <view class='request'>
+  
+</view>
+<textarea bindinput='bindCity' placeholder='绑定城市'></textarea>
+<button bindtap='startRuest'>开始请求</button>  -->
+
