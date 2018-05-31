@@ -51,5 +51,18 @@ Page({
     wx.navigateTo({
       url: '../request/request',
     })
+  },
+  //文件
+  file: function(){
+    wx.navigateTo({
+      url: '../file/file',
+    })
+  },
+  //设备
+  device: function(){
+
+    wx.navigateTo({
+      url: '../device/device',
+    })
   }
 })

@@ -129,7 +129,7 @@ Page({
     this.setData({
       animation: this.animation.export()
     })
-    //下拉刷新
+    //下拉刷新 - 需要在Page.json中配置
     wx.startPullDownRefresh()
   },
   //重置动画
@@ -139,7 +139,7 @@ Page({
       scrollTop: 0,
       duration: 1000
     })
-    //停止下拉刷新
+    //停止下拉刷新 - 需要在Page.json中配置
     wx.stopPullDownRefresh()
 
     //重置动画

@@ -1,4 +1,8 @@
 <!--pages/parents/canvas/canvas.wxml-->
-<canvas canvas-id="myCanvas" style="border: 1px solid;">
+<canvas canvas-id="myCanvas" style="border: 1px solid;background: lightGray;"
+bindtouchstart='touchstart'
+bindtouchmove='touchmove'
+bindtouchend='touchend'>
 
 </canvas>
+<view hidden='{{hidden}}'>Corrdinates:({{x}},{{y}})</view>

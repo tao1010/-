@@ -15,14 +15,15 @@
     "pages/parents/animation/animation",
     "pages/parents/audio/audio",
     "pages/parents/map/map",
-    "pages/parents/request/request"
+    "pages/parents/request/request",
+    "pages/parents/file/file",
+    "pages/parents/device/device"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#33cbd5",
     "navigationBarTitleText": "京县家校圈",
-    "navigationBarTextStyle": "#fff",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle": "#fff"
   },
   "tabBar": {
     "color": "#6e6d6b",

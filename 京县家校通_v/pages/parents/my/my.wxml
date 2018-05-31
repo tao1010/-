@@ -10,5 +10,7 @@
   <button class='video' bindtap='audio'>音频</button>
   <button class='video' bindtap='map'>地图</button>
   <button class='video' bindtap='request'>网络请求</button>
+  <button class='video' bindtap='file'>文件</button>
+  <button class='video' bindtap='device'>设备</button>
 </view>
 
