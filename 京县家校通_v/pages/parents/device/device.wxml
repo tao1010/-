@@ -9,3 +9,9 @@
 <button bindtap='scanCode'>扫码</button>
 <button bindtap='clipboard'>剪贴板</button>
 <button bindtap='contact'>联系人</button>
+<button bindtap='wifi'>WiFi</button>
+<button bindtap='compass'>罗盘</button>
+<button bindtap='accelerometer'>加速度计</button>
+<button bindtap='ibeacon'>iBeacon</button>
+<button bindtap='hce'>NFC</button>
+<button bindtap='bluetooth'>蓝牙</button>
