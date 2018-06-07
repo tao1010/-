@@ -64,5 +64,129 @@ Page({
     wx.navigateTo({
       url: '../device/device',
     })
+  },
+  pay: function(){
+    wx.requestPayment({
+      timeStamp: '',
+      nonceStr: '',
+      package: '',
+      signType: '',
+      paySign: '',
+      success: function(res){
+        console.log(res)
+      },
+      fail: function(res){
+        console.log(res)
+      },
+      complete: function(res){
+        console.log(res)
+      }
+    })
+  },
+  run: function(){
+    wx.getSetting({
+      success: function (res) {
+        
+        if (res.authSetting['scope.werun']) {
+          console.log(res)
+          wx.getWeRunData({
+            success: function (res) {
+              console.log(res)
+            }
+          })
+        }else{
+          wx.authorize({
+            scope: 'scope.werun',
+            success() {
+              wx.run()
+            }
+          })
+          console.log('未授权')
+        }
+      }
+    })
+  },
+  share: function(){
+
+    wx.showShareMenu({
+      withShareTicket: true,
+      success(){
+        console.log('success')
+        wx.getShareInfo({
+          shareTicket: '',
+          success: function(res){
+            console.log(res)
+          }
+        })
+      }
+    })
+  },
+  getCode: function(){
+
+    wx.request({
+      path: '/pages/parents/my/my',
+      url: 'https://api.weixin.qq.com/wxa/getwxacode?access_token=ACCESS_TOKEN',
+      success: function(res){
+        console.log(res)
+      }
+    })
+  },
+  editCard: function(){
+    wx.navigateToMiniProgram({
+      appId: 'wx933aa61d2fda8d42',
+      extraData: data, // 包括 encrypt_card_id, outer_str, biz三个字段，须从 step3 中获得的链接中获取参数
+      success: function (res) {
+        console.log('success' + res)
+      },
+      fail: function (res) {
+        console.log('fail' + res)
+      }
+    })
+    wx.openCard({
+      cardList: [{cardId:'',code:''}],
+      success: function (res) {
+        console.log('success' + res)
+      },
+      fail: function (res) {
+        console.log('fail' + res)
+      }
+    })
+    wx.addCard({
+      cardList: [
+        {
+          carId: '',
+          cardExt: '{"code": "", "openid": "", "timestamp": "", "signature":""}'
+        }
+      ],
+      success: function(res){
+        console.log('success' + res)
+      },
+      fail: function(res){
+        console.log('fail' + res)
+      }
+    })
+  },
+  invoiceTitle: function(){
+    wx.getSetting({
+      success: function (res) {
+        console.log(res)
+        if (res.authSetting['scope.invoiceTitle']) {
+          console.log('getSetting' + res)
+          wx.chooseInvoiceTitle({
+            success: function (res) {
+              console.log(res)
+            }
+          })
+        } else {
+          wx.authorize({
+            scope: 'scope.invoiceTitle',
+            success() {
+              wx.run()
+            }
+          })
+          console.log('未授权')
+        }
+      }
+    })
   }
 })

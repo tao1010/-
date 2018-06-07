@@ -6,4 +6,15 @@
     <view class='register' hidden='{{hiddenRegister}}' bindtap='showRegister'>绑定学生账号</view>
   </view>
   <button class='commit' bindtap='commitLoginInfo'>提交</button>
+  <button class='auth' bindtap= 'auth' open-type='getUserInfo'>授权</button>
+
+  <view class='userinfo'>
+    <!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+    <open-data type="userAvatarUrl"></open-data>
+    <open-data type="userNickName"></open-data>
+<!-- 需要使用 button 来授权登录 -->
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+    <view wx:else>请升级微信版本</view>
+  </view>
+
 </view>

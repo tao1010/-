@@ -35,6 +35,12 @@ Page({
     }else{
       console.log("You can't")
     }
+    wx.openSetting({
+      success: function(res){
+        console.log(res)
+      }
+    })
+    
   },
   networkingStatus: function(){
     wx.getNetworkType({
