@@ -1,0 +1,8 @@
+/* pages/components/customButton/customButton.wxss */
+
+.button{
+
+  flex-direction: column;
+  height:  120rpx;
+  width: 200rpx;
+}

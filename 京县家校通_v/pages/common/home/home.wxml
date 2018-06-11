@@ -12,23 +12,23 @@
   <view class='home-items'>
     <view class='items-item'>
       
-      <view class="item">
+      <view class="item" bindtap='clickSchool'>
         <image class='item-image' src='../../images/parents/school.png'></image>
         <text>学校简介</text>
       </view>
 
-      <view class="item" >
+      <view class="item" bindtap='clickTeacher'>
         <image class='item-image' src='../../images/parents/teacher.png'></image>
         <text>名师风采</text>
       </view>
 
-      <view class="item" >
+      <view class="item" bindtap='clickStudent'>
         <image class='item-image' src='../../images/parents/score.png'></image>
         <text>学生成绩</text>
       </view>
 
-      <view class="item" >
-        <image class='item-image' src='../../images/parents/sales.png'></image>
+      <view class="item" bindtap='clickCost'>
+        <image class='item-image' src='../../images/parents/cost.png'></image>
         <text>消费记录</text>
       </view>
 
@@ -54,7 +54,7 @@
       </view>
 
       <view class="item" >
-        <image class='item-image' src='../../images/parents/sales.png'></image>
+        <image class='item-image' src='../../images/parents/cost.png'></image>
         <text>李老师</text>
       </view>
     </scroll-view>

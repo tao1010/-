@@ -47,5 +47,30 @@ Page({
     //   })
     // }
     
-  },  
+  }, 
+  // 点击事件
+  clickSchool: function(){
+    console.log('学校简介')
+    wx.navigateTo({
+      url: '../schoolintroduce/schoolintroduce',
+    })
+  },
+  clickTeacher: function () {
+    console.log('名师风采')
+    wx.navigateTo({
+      url: '../famousteacher/famousteacher',
+    })
+  },
+  clickStudent: function () {
+    console.log('学生成绩')
+    wx.navigateTo({
+      url: '../../parents/score/score',
+    })
+  },
+  clickCost: function () {
+    console.log('消费记录')
+    wx.navigateTo({
+      url: '../../parents/costrecord/costrecord',
+    })
+  }
 })

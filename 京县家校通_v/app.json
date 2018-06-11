@@ -17,7 +17,11 @@
     "pages/parents/map/map",
     "pages/parents/request/request",
     "pages/parents/file/file",
-    "pages/parents/device/device"
+    "pages/parents/device/device",
+    "pages/parents/costrecord/costrecord",
+    "pages/parents/score/score",
+    "pages/common/schoolintroduce/schoolintroduce",
+    "pages/common/famousteacher/famousteacher"
   ],
   "window": {
     "backgroundTextStyle": "light",

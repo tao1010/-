@@ -1,0 +1,8 @@
+<!--pages/common/schoolintroduce/schoolintroduce.wxml-->
+<customButton title="王老师" src="../../images/parents/cost.png">hello
+</customButton>
+
+<customButton title="王老师" src="../../images/parents/cost.png">hello
+</customButton>
+<button class="mini-btn" type="warn" size="mini">按钮</button>
+ <button type="default" disabled="true" plain="true">按钮</button>

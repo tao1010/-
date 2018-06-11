@@ -1,0 +1,9 @@
+<!--pages/components/customButton/customButton.wxml-->
+<view class='button' bindtap="{{clickButton}}">
+
+  <image src="{{src}}" style='width:40px;height:40px;'></image>
+  <text style='font-size:26rpx;'>{{title}}</text>
+
+</view>
+
+
