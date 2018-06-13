@@ -1,2 +1,80 @@
 /* pages/common/contact/contact.wxss */
+.title{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
 
+.spacing{
+
+  box-sizing: border-box;
+  padding: 0 80rpx;
+}
+
+.flex-wrp{
+  margin-top: 60rpx;
+  display: flex;
+}
+
+.flex{
+  width: 200rpx;
+  height: 300rpx;
+  font-size: 26rpx;
+}
+
+.demo1{
+
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1AAD19;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo1:before{
+  content: 'A';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.demo2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #FFFFFF;
+  /* font-size: 36rpx; */
+}
+.demo2:before{
+  /* content: 'B'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.demo3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F1F1;
+  color: #353535;
+  font-size: 36rpx;
+}
+.demo3:before{
+  content: 'C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-V{
+  margin: 0 auto;
+  width: 300rpx;
+  height: 200rpx;
+}

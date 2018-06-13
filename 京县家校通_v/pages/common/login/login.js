@@ -57,18 +57,21 @@ Page({
     if (getApp().globalData.userRole === "1") {
 
       wx.switchTab({
-        url: '../../parents/my/my',
+        // url: '../../parents/my/my',
+        url:'../home/home',
       })
     }
     if (getApp().globalData.userRole === "2") {
       wx.switchTab({
-        url: '../../teacher/my/my',
+        // url: '../../teacher/my/my',
+        url: '../home/home',
         // url: '../../parents/my/my',
       })
     }
     if (getApp().globalData.userRole === "3") {
       wx.switchTab({
-        url: '../../admin/center/center',
+        // url: '../../admin/center/center',
+        url: '../home/home',
         // url: '../../parents/my/my',
       })
     }

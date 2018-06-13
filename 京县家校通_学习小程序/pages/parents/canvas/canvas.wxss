@@ -1,0 +1,8 @@
+/* pages/parents/canvas/canvas.wxss */
+canvas{
+
+  width: 90%;
+  height: 500px;
+  margin-left: 5%;
+  margin-top: 5px;
+}

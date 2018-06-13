@@ -4,8 +4,13 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    src: String,//图片资源
-    title: String,//按钮标题
+    // customButton: {
+      
+      // customButtonTitle: String,
+      // customButtonImage: Object,
+      // src: String,//图片资源
+      // title: String,//按钮标题
+    // }
   },
 
   /**

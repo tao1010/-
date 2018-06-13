@@ -7,7 +7,24 @@ Page({
   data: {
     
   },
+  onLoad: function(options){
 
+    if (getApp().globalData.userRole === "1") {
+      wx.setNavigationBarTitle({
+        title: '家长中心',
+      })
+    }
+    if (getApp().globalData.userRole === "2") {
+      wx.setNavigationBarTitle({
+        title: '教师中心',
+      })
+    }
+    if (getApp().globalData.userRole === "3") {
+      wx.setNavigationBarTitle({
+        title: '管理中心',
+      })
+    }
+  },
   logOut: function () {
     wx.redirectTo({
       url: '../../common/index/index',

@@ -1,0 +1,29 @@
+<!--pages/common/famousteacher/famousteacher.wxml-->
+<view class='group'>
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}"></icon>
+  </block>
+</view>
+
+<view class='group'>
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="40"></icon>
+  </block>
+</view>
+
+<view class='group'>
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="40" color="{{item}}"></icon>
+  </block>
+</view>
+
+<view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}">
+      <text>{{text}}</text>
+</view>
+<button disabled="{{!canAdd}}" bindtap="add">add line</button>
+<button disabled="{{!canRemove}}" bindtap="remove">remove line</button>
+
+
+<view>
+  <rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+</view>

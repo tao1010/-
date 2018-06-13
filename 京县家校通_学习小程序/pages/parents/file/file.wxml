@@ -1,0 +1,23 @@
+<!--pages/parents/file/file.wxml-->
+<view class='info'>
+  <!-- 临时文件有图片 -->
+  <block wx:if="{{tempFilePath != ''}}">
+    <image src='{{tempFilePath}}' style='background:green;' class='image' mode='aspectFit'></image>
+  </block>
+  <!-- 本地文件有图片，临时路径没有图片 -->
+  <!-- <block wx:if="{{saveFielPath != '' && tempFilePath === ''}}">
+    <image src='{{saveFilePath}}' style='background:yellow;' class='image' mode='aspectFit'></image>
+  </block> -->
+  <!-- 本地、临时路径都没有图片文件 -->
+  <block wx:if="{{tempFilePath ==='' && saveFilePath === ''}}">
+    <image class='image' style='background:red;' bindtap='chooseImage'>请选择文件</image>
+  </block>
+
+</view>
+<button type="primary" bindtap="saveFile">保存文件</button>
+<button bindtap="clear">删除临时文件</button>
+<button bindtap="getList">获取文件列表</button>
+<button bindtap="getFile">获取临时文件信息</button>
+<button bindtap="getFileInfo">获取本地文件信息</button>
+<button bindtap="removeFile">删除本地文件</button>
+<button bindtap="openDocument">打开文档</button>

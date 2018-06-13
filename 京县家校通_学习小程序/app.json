@@ -1,0 +1,92 @@
+{
+  "pages": [
+    "pages/common/index/index",
+    "pages/common/login/login",
+    "pages/common/register/register",
+    "pages/common/class/class",
+    "pages/common/home/home",
+    "pages/common/contact/contact",
+    "pages/common/video/video",
+    "pages/admin/center/center",
+    "pages/parents/my/my",
+    "pages/teacher/my/my",
+    "pages/common/video/API/videoAPI",
+    "pages/parents/canvas/canvas",
+    "pages/parents/animation/animation",
+    "pages/parents/audio/audio",
+    "pages/parents/map/map",
+    "pages/parents/request/request",
+    "pages/parents/file/file",
+    "pages/parents/device/device",
+    "pages/parents/costrecord/costrecord",
+    "pages/parents/score/score",
+    "pages/common/schoolintroduce/schoolintroduce",
+    "pages/common/famousteacher/famousteacher"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33cbd5",
+    "navigationBarTitleText": "京县家校圈",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#33cbd5",
+    "list": [
+      {
+        "pagePath": "pages/common/home/home",
+        "text": "学校",
+        "iconPath": "pages/images/nav/home.png",
+        "selectedIconPath": "pages/images/nav/home-sel.png"
+      },
+      {
+        "pagePath": "pages/common/contact/contact",
+        "text": "通讯录",
+        "iconPath": "pages/images/nav/contact.png",
+        "selectedIconPath": "pages/images/nav/contact-sel.png"
+      },
+      {
+        "pagePath": "pages/common/class/class",
+        "text": "班级圈",
+        "iconPath": "pages/images/nav/class.png",
+        "selectedIconPath": "pages/images/nav/class-sel.png"
+      },
+      {
+        "pagePath": "pages/parents/my/my",
+        "text": "我的",
+        "iconPath": "pages/images/nav/my.png",
+        "selectedIconPath": "pages/images/nav/my-sel.png"
+      }
+    ]
+  },
+  "tabBar2": {
+    "color": "#6e6d6b",
+    "selectedColor": "#33cbd5",
+    "list": [
+      {
+        "pagePath": "pages/common/home/home",
+        "text": "学校",
+        "iconPath": "pages/images/nav/home.png",
+        "selectedIconPath": "pages/images/nav/home-sel.png"
+      },
+      {
+        "pagePath": "pages/common/contact/contact",
+        "text": "信箱",
+        "iconPath": "pages/images/nav/contact.png",
+        "selectedIconPath": "pages/images/nav/contact-sel.png"
+      },
+      {
+        "pagePath": "pages/common/class/class",
+        "text": "公告",
+        "iconPath": "pages/images/nav/class.png",
+        "selectedIconPath": "pages/images/nav/class-sel.png"
+      },
+      {
+        "pagePath": "pages/parents/my/my",
+        "text": "中心",
+        "iconPath": "pages/images/nav/my.png",
+        "selectedIconPath": "pages/images/nav/my-sel.png"
+      }
+    ]
+  }
+}

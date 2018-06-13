@@ -1,0 +1,20 @@
+/* pages/class/class.wxss */
+.banner{
+  width: 100%;
+  background: red;
+}
+
+.addclassView{
+  background: #33cbd5;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  /* margin-bottom: 10px;
+  margin-right: 10px; */
+} 
+.add{
+
+  width: 44px;
+  height: 44px;
+  margin: 8px 8px 8px 8px;
+}

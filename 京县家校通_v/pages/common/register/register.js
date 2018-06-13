@@ -29,9 +29,20 @@ Page({
   },
   commitBind: function (e) {
 
-    console.log(studentName + studentNumber);
-    wx.switchTab({
-      url: '../../parents/my/my',
+    wx.showModal({
+      title: '温馨提示',
+      content: '请输入账号',
+      success: function(res){
+
+        if(res.confirm){
+          wx.switchTab({
+            // url: '../../parents/my/my',
+            url: '../home/home',
+          })
+        }else if(res.cancel){
+          console.log('点击了取消')
+        }
+      }
     })
   }
 })

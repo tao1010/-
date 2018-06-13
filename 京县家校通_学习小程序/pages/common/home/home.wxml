@@ -1,0 +1,80 @@
+<!--pages/common/home/home.wxml-->
+<view class='home-baseview'>
+  <!-- home banner -->
+  <swiper indicator-dots='true' autoplay='true' circular='true'>
+      <block wx:for="{{banners}}">
+        <swiper-item>
+          <image class="banner-image" style="width:100%;height:{{wx.getSystemInfoSync().windowWidth * 500 / 750}}" src="{{item}}" />
+        </swiper-item>
+      </block>
+  </swiper>
+
+  <view class='home-items'>
+    <view class='items-item'>
+      
+      <view class="item" bindtap='clickSchool'>
+        <image class='item-image' src='../../images/parents/school.png'></image>
+        <text>学校简介</text>
+      </view>
+
+      <view class="item" bindtap='clickTeacher'>
+        <image class='item-image' src='../../images/parents/teacher.png'></image>
+        <text>名师风采</text>
+      </view>
+
+      <view class="item" bindtap='clickStudent'>
+        <image class='item-image' src='../../images/parents/score.png'></image>
+        <text>学生成绩</text>
+      </view>
+
+      <view class="item" bindtap='clickCost'>
+        <image class='item-image' src='../../images/parents/cost.png'></image>
+        <text>消费记录</text>
+      </view>
+
+    </view>
+  </view>
+  <view class='home-teacher'>
+    <text>-------------------教师风采--------------------</text>
+    <scroll-view class='teacher-item' scroll-x='ture'>
+
+      <!-- <view class="item">
+        <image class='item-image' src='../../images/parents/school.png'></image>
+        <text>王老师</text>
+      </view>
+
+      <view class="item" >
+        <image class='item-image' src='../../images/parents/teacher.png'></image>
+        <text>张老师</text>
+      </view>
+
+      <view class="item" >
+        <image class='item-image' src='../../images/parents/score.png'></image>
+        <text>郭老师</text>
+      </view>
+
+      <view class="item" >
+        <image class='item-image' src='../../images/parents/cost.png'></image>
+        <text>李老师</text>
+      </view> -->
+    </scroll-view>
+  </view>
+  <view class='home-news'>
+    
+    
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

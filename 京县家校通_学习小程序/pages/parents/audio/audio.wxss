@@ -1,0 +1,19 @@
+/* pages/parents/audio/audio.wxss */
+.video{
+
+  width: 90%;
+  margin-top: 10px;
+}
+.myAudio{
+
+  background: lightblue;
+  margin-top: 10px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+button{
+
+  margin-top: 10px;
+  
+}

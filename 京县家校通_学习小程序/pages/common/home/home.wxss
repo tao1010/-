@@ -1,0 +1,35 @@
+/* pages/common/home/home.wxss */
+.banner-image{
+
+  background: green;
+}
+.items-item{
+
+  display:flex;
+  flex-direction: row;
+}
+
+.item{
+
+  width: 200rpx;
+  height: 120rpx;
+  font-size: 26rpx; 
+  flex-direction: column;
+}
+.item-image{
+
+  width: 40px;
+  height: 40px;
+  margin-top: 20rpx;
+}
+text{
+  height: 40rpx;
+  font-size: 26rpx; 
+  align-items: center;
+}
+
+.home-teacher{
+  background: lightgray;
+  width: 100%;
+  height: 200rpx;
+}

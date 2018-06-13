@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "班级圈",
+  "usingComponents": {
+    "classList": "../../components/classList/classList"
+  }
+}

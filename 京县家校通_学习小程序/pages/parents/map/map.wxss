@@ -1,0 +1,14 @@
+/* pages/parents/map/ma p.wxss */
+view{
+
+  background: lightblue;
+}
+
+.map{
+
+  background: lightgray;
+  margin-top: 10px;
+  width: 90%;
+  height: 400px;
+  margin-left: 5%;
+}

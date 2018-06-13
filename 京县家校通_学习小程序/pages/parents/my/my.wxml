@@ -1,0 +1,23 @@
+<!--pages/parents/my/my.wxml-->
+<!-- <import src="../template/customTabbar.wxml"/>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/> -->
+
+<view class='content'>
+  <button class='logout' bindtap='logOut'>退出登录</button>
+  <button class='video' bindtap='video'>视频</button>
+  <button class='video' bindtap='canvas'>绘图</button>
+  <button class='video' bindtap='animation'>动画</button>
+  <button class='video' bindtap='audio'>音频</button>
+  <button class='video' bindtap='map'>地图</button>
+  <button class='video' bindtap='request'>网络请求</button>
+  <button class='video' bindtap='file'>文件</button>
+  <button class='video' bindtap='device'>设备</button>
+  <button class='video' bindtap='pay'>微信支付</button>
+  <button class='video' bindtap='run'>微信运动</button>
+  <button class='video' bindtap='share'>分享</button>
+  <button class='video' open-type='share'>页面内分享</button>
+  <button class='video' bindtap='getCode'>code</button>
+  <button class='video' bindtap='editCard'>卡券</button>
+  <button class='video' bindtap='invoiceTitle'>发票</button>
+</view>
+

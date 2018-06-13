@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "学校"
+  "navigationBarTitleText": "学校",
+  "usingComponents": {
+    "classList": "../../components/customButton/customButton"
+  }
 }

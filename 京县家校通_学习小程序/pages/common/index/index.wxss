@@ -1,0 +1,80 @@
+/**index.wxss**/
+.content{
+
+  height: 100%;
+}
+.background{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*z-index 属性设置元素的堆叠顺序,仅能在定位元素上奏效（例如 position:absolute);
+  拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面.如果为正数，则离用户更近，为负数则表示离用户更远.
+  */
+  z-index: -100;
+}
+
+.buttonbox{
+
+/*padding-top 属性设置元素的上内边距（空间）  */
+  padding-top: 550rpx;
+}
+/*https://tao1010.github.io/2018/03/15/CSS/CSS-选择器/
+A B	匹配任意元素，满足条件：B是A的后代结点（B是A的子节点，或者A的子节点的子节点）  */
+.buttonbox view{
+
+  width: 584rpx;
+  margin: 0 auto;
+  height: 100rpx;
+  color: #fff;
+  line-height: 100rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+  position: relative;
+}
+
+.buttonbox view image{
+
+  width: 100%;
+  height: 116rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -99;
+}
+
+.copyright{
+
+  position: absolute;
+  color: #bbb;
+  left: 36%;
+  bottom: 32rpx;
+  font-family: serif;
+  font-size: 21rpx;
+  text-align: center;
+}
+
+
+
+/* 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+ */

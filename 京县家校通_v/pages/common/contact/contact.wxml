@@ -1,2 +1,27 @@
 <!--pages/common/contact/contact.wxml-->
 
+<!-- <web-view src="https://www.baidu.com"></web-view> -->
+
+<view>
+  <view class='title'> 
+    <text>flex-direction: row\n横向布局</text>
+  </view>
+  <view class='spacing'>
+    <view class='flex-wrp' style='flex-direction'>
+      <view class='flex demo1'></view>
+      <view class='flex demo2'></view>
+      <view class='flex demo3'></view>
+    </view>
+  </view>
+
+  <view class="title">
+      <text>flex-direction: column\n纵向布局</text>
+  </view>
+  <view class='spacing'>
+    <view class="flex-wrp" style="flex-direction:column;">
+        <view class="flex flex-V demo1"></view>
+        <view class="flex flex-V demo2"></view>
+        <view class="flex flex-V demo3"></view>
+      </view>
+  </view>
+</view>
