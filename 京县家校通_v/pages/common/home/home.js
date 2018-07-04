@@ -72,5 +72,12 @@ Page({
     wx.navigateTo({
       url: '../../parents/costrecord/costrecord',
     })
+  },
+  hello: function(){
+
+    console.log('。。。。')
+    wx.navigateTo({
+      url: '../../parents/score/score',
+    })
   }
 })

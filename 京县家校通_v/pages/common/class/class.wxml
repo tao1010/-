@@ -4,10 +4,10 @@
 缩放	widthFix	宽度不变，高度自动变化，保持原图宽高比不变-->
   <image class='banner' mode='widthFix' src='{{banner[0]}}'></image> 
   <!--以下是自定义组件内容列表  -->
-   <classList>hello</classList> 
-  <view class='addclassView'>
-    <image class='add' mode='aspectFit' src='../../images/class/add.png'></image>
-  </view>
+   <!-- <classList>hello</classList>  -->
+  <!-- <view class='addclassView'> -->
+    <!-- <image class='add' mode='aspectFit' src='../../images/class/add.png'></image> -->
+  <!-- </view> -->
   
 </view>
 <!-- <view class='addclassView'>

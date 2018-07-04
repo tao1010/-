@@ -1,5 +1,5 @@
 <!--pages/components/customButton/customButton.wxml-->
-<view class='button' bindtap="{{clickButton}}">
+<view class='button' bindtap="clickButton">
 
   <image class='flex-v image' src="{{src}}"></image>
   <text class='flex-v text'>{{title}}</text>

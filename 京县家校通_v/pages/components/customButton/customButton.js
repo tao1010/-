@@ -4,6 +4,15 @@ Component({
    * 组件的属性列表
    */
   properties: {
+
+    title: {
+      type: String,
+      value: '教师姓名'
+    },
+    src: {
+      type: String,
+      value: '图片资源地址'
+    }
     // customButton: {
       
       // customButtonTitle: String,
@@ -25,6 +34,9 @@ Component({
    */
   methods: {
     
+    clickButton: function(){
+      this.triggerEvent('clickButton');
+    }
     // clickButton: function(){
     //   var myEventDetail = {}
     //   var myEventOption = {}
